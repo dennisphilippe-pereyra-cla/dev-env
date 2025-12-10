@@ -1,0 +1,9 @@
+services:
+  dppdev:
+    build:
+      context: ../..
+      dockerfile: .devcontainer/images/base.dockerfile
+      args:
+        IMAGE_VERSION: ubuntu-24.04
+    volumes:
+      - ../..:/workspaces/base:cached

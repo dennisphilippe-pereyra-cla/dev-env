@@ -1,0 +1,9 @@
+{
+  "name": "DPP Development Environment",
+  "dockerComposeFile": [
+    "./compose/compose.yml"
+  ],
+  "service": "dppdev",
+  "workspaceFolder": "/workspaces/base",
+  "postCreateCommand": "ansible-playbook -i localhost, -c local .devcontainer/playbook.yml"
+}
